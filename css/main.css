@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* VARIABLES */
+/* TIPOGRAFÍAS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/* SETEO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #090b1a; }
+
+main {
+  display: flex;
+  align-items: center;
+  height: 100vh; }
+
+.card {
+  background-color: #1b1938;
+  margin: 0 auto;
+  border-radius: 10px;
+  max-width: 375px;
+  font-size: 15px; }
+  .card .card__img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+    -webkit-filter: sepia(100%) hue-rotate(205deg) saturate(30) grayscale(70%);
+    filter: sepia(100%) hue-rotate(205deg) saturate(30) grayscale(70%); }
+  .card .card__info {
+    text-align: center; }
+    .card .card__info .card__span {
+      color: #aa5cdb; }
+    .card .card__info .card__text {
+      color: rgba(255, 255, 255, 0.75);
+      font-family: 'Lexend Deca';
+      margin: 0 50px; }
+    .card .card__info .card__title {
+      color: white;
+      margin: 20px 32px;
+      font-family: 'Inter'; }
+    .card .card__info .card__list {
+      list-style: none;
+      margin: 30px auto;
+      font-family: 'Inter';
+      /* width: 70px; */ }
+      .card .card__info .card__list .card__item {
+        color: white;
+        margin: 20px 0; }
+        .card .card__info .card__list .card__item .card__remarkable {
+          font-family: 'Lexend Deca';
+          font-size: 25px;
+          display: block;
+          margin: 8px 0; }
+
+/* QUERY DESKTOP */
+@media screen and (min-width: 1440px) {
+  .card {
+    min-width: 1440px;
+    height: 480px;
+    display: flex;
+    flex-direction: row-reverse; }
+    .card .card__img {
+      border-radius: 0 10px 10px 0; }
+    .card .card__info {
+      width: 380px;
+      margin: 50px auto;
+      text-align: start; }
+      .card .card__info .card__list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px; }
+        .card .card__info .card__list .card__item:last-child {
+          margin-right: 10px; }
+      .card .card__info .card__title {
+        margin: 20px 0; }
+      .card .card__info .card__text {
+        margin: 30px 0; } }
